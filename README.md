@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Founding-level Full Stack / Product Engineer
+
+A minimal, black and white portfolio website built with Next.js, showcasing product mindset, full stack engineering skills, and case studies.
+
+## Features
+
+- **Minimal Design**: Clean, professional black and white theme
+- **Mobile Friendly**: Fully responsive design that works on all devices
+- **3D Grid Background**: Subtle grid pattern with 3D perspective effect
+- **Middle Grid Layout**: Content centered with space on both sides (blog-like reading experience)
+- **Case Studies**: Two detailed case studies showcasing technical work
+- **About Page**: Personal introduction and work philosophy
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** (for animations)
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+portfolio/
+├── app/
+│   ├── about/              # About page
+│   ├── case-study/         # Case study pages
+│   │   ├── techmonk/
+│   │   └── personalization-engine/
+│   ├── globals.css         # Global styles
+│   ├── layout.tsx          # Root layout
+│   └── page.tsx            # Landing page
+├── components/
+│   ├── ContentContainer.tsx # Content wrapper with max-width
+│   ├── GridBackground.tsx  # 3D grid background component
+│   └── Navigation.tsx      # Navigation component
+└── public/                 # Static assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Update Personal Information
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Edit `app/page.tsx` for landing page content
+- Edit `app/about/page.tsx` for about page content
+- Update email links throughout the site
 
-## Deploy on Vercel
+### Styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Global styles: `app/globals.css`
+- Grid background: `components/GridBackground.tsx`
+- Color scheme: All colors are black/white/gray - modify in Tailwind classes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## License
+
+MIT
