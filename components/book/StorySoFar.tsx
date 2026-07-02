@@ -35,7 +35,7 @@ export default function StorySoFar() {
           <Reveal key={a.title} delay={i * 60}>
             <div className="relative">
               <span
-                className="absolute -left-[35px] top-2 w-2 h-2 rounded-full bg-accent"
+                className="absolute -left-[33px] top-[7px] w-2 h-2 rounded-full bg-accent ring-4 ring-paper"
                 aria-hidden="true"
               />
               <p className="t-eyebrow mb-1">{a.when}</p>

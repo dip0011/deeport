@@ -35,14 +35,19 @@ export default function ArchFlow() {
 
   return (
     <div className="rounded-sm border border-rule bg-paper-2/50 p-5 md:p-7">
-      <div className="flex items-center justify-between mb-5">
+      <div className="flex items-center justify-between gap-4 mb-5">
         <p className="t-eyebrow">one action, through the whole system</p>
-        <button
-          onClick={() => setActive((a) => (a + 1) % steps.length)}
-          className="t-meta text-accent hover:text-accent-2 transition-colors"
-        >
-          trace it &rarr;
-        </button>
+        <div className="flex items-center gap-3 shrink-0">
+          <span className="t-meta tabular-nums">
+            {active + 1} / {steps.length}
+          </span>
+          <button
+            onClick={() => setActive((a) => (a + 1) % steps.length)}
+            className="t-meta rounded-sm border border-rule-strong px-3 py-1 text-ink hover:border-accent hover:text-accent transition-colors"
+          >
+            Next step
+          </button>
+        </div>
       </div>
 
       {/* nodes */}
