@@ -3,8 +3,10 @@
 import { useEffect, useState } from 'react';
 
 /**
- * A thin oxblood ribbon pinned to the top-right, like a bookmark
- * sliding down the page as you read.
+ * Reading progress. On large screens it is a bookmark ribbon that hangs
+ * in the right page margin. On mobile/tablet (where the page fills the
+ * viewport and there is no margin) it becomes a thin top progress line,
+ * so it never overlaps the text.
  */
 export default function BookmarkProgress() {
   const [progress, setProgress] = useState(0);
@@ -27,24 +29,36 @@ export default function BookmarkProgress() {
   }, []);
 
   return (
-    <div
-      className="fixed top-0 right-5 md:right-8 z-40 pointer-events-none"
-      aria-hidden="true"
-    >
-      {/* ribbon */}
+    <>
+      {/* Mobile / tablet: thin top progress line */}
       <div
-        className="w-2 md:w-2.5 bg-accent shadow-[0_2px_6px_rgba(30,27,22,0.2)] transition-[height] duration-150 ease-out"
-        style={{ height: `calc(3.5rem + ${progress * 0.42}vh)` }}
+        className="lg:hidden fixed top-0 left-0 right-0 h-[2px] z-50 pointer-events-none"
+        aria-hidden="true"
       >
-        {/* notched tail */}
         <div
-          className="w-full bg-accent"
-          style={{
-            height: '10px',
-            clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 60%, 0 100%)',
-          }}
+          className="h-full bg-accent transition-[width] duration-150 ease-out"
+          style={{ width: `${progress}%` }}
         />
       </div>
-    </div>
+
+      {/* Desktop: bookmark ribbon in the right page margin */}
+      <div
+        className="hidden lg:block fixed top-0 right-8 xl:right-12 z-40 pointer-events-none"
+        aria-hidden="true"
+      >
+        <div
+          className="w-2.5 bg-accent shadow-[0_3px_8px_rgba(30,27,22,0.22)] transition-[height] duration-150 ease-out"
+          style={{ height: `calc(4rem + ${progress * 0.4}vh)` }}
+        >
+          <div
+            className="w-full bg-accent"
+            style={{
+              height: '11px',
+              clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 55%, 0 100%)',
+            }}
+          />
+        </div>
+      </div>
+    </>
   );
 }
