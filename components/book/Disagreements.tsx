@@ -23,7 +23,13 @@ export default function Disagreements() {
       <ul className="flex flex-col gap-6 md:gap-7">
         {takes.map((t, i) => (
           <Reveal as="li" key={t} delay={i * 60}>
-            <h3 className="t-h3">{t}</h3>
+            <div className="flex items-start gap-4">
+              <span
+                className="mt-[0.62rem] w-2 h-2 rotate-45 bg-accent shrink-0"
+                aria-hidden="true"
+              />
+              <h3 className="t-h3">{t}</h3>
+            </div>
           </Reveal>
         ))}
       </ul>
