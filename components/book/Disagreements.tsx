@@ -35,7 +35,7 @@ export default function Disagreements() {
       <div className="flex flex-col divide-y divide-rule">
         {takes.map((t, i) => (
           <Reveal key={t.claim} delay={i * 60}>
-            <div className="pt-8 pb-8 first:pt-0">
+            <div className="pt-12 md:pt-14 pb-10 first:pt-0">
               <h3 className="t-h3 mb-3">{t.claim}</h3>
               <p className="t-body">{t.body}</p>
             </div>
