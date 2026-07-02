@@ -69,4 +69,4 @@ Colors are baked in as defaults but overridable with a color utility (the scale 
 - NEVER hardcode hex/rgba, set inline `style` colors, use a second body size, mix radii, or add a sans font.
 - When adding anything new, match an existing component's structure and re-read this guide first.
 
-_Note: the two case-study pages (`app/case-study/*`) are pending a refactor onto this system; until then they are the only sanctioned exception._
+The entire site (landing + both case studies) follows this system. There are no sanctioned exceptions.

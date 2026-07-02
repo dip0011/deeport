@@ -16,5 +16,5 @@ All visual work MUST follow **`DESIGN_GUIDE.md`**. Read it before changing any U
 - Real, résumé-verified facts only. No invented metrics/logos/testimonials.
 - Positioning: teams fail because the *wrong product* ships; Dip builds the right thing and reduces uncertainty. Speed is secondary, never the headline.
 
-## Known pending work
-- `app/case-study/techmonk/page.tsx` and `app/case-study/personalization-engine/page.tsx` are not yet refactored onto `PageShell`/`Section`/`.t-*` and still contain some inline styles. Refactor them to the guide when asked.
+## Status
+- The whole site (landing + both case studies) is on the design system. Keep it that way: any new page composes `PageShell` + `Section` and uses `.t-*` + tokens.
