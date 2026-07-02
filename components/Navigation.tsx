@@ -96,6 +96,28 @@ export default function Navigation() {
               Work
             </Link>
             <Link
+              href="/architecture"
+              className={`nav-link ${isActive('/architecture') ? 'active' : ''}`}
+              style={{}}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#0B0D12')}
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.color = '')
+              }
+            >
+              Systems
+            </Link>
+            <Link
+              href="/decisions"
+              className={`nav-link ${isActive('/decisions') ? 'active' : ''}`}
+              style={{}}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#0B0D12')}
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.color = '')
+              }
+            >
+              Decisions
+            </Link>
+            <Link
               href="/about"
               className={`nav-link ${isActive('/about') ? 'active' : ''}`}
               style={{}}
@@ -138,6 +160,22 @@ export default function Navigation() {
                 Work
               </Link>
               <Link
+                href="/architecture"
+                className="text-sm font-medium"
+                style={{ color: '#0B0D12' }}
+                onClick={() => setOpen(false)}
+              >
+                Systems
+              </Link>
+              <Link
+                href="/decisions"
+                className="text-sm font-medium"
+                style={{ color: '#0B0D12' }}
+                onClick={() => setOpen(false)}
+              >
+                Decisions
+              </Link>
+              <Link
                 href="/about"
                 className="text-sm font-medium"
                 style={{ color: '#0B0D12' }}
@@ -145,6 +183,14 @@ export default function Navigation() {
               >
                 About
               </Link>
+              <a
+                href="mailto:dipdhameliya2001@gmail.com"
+                className="text-sm font-medium"
+                style={{ color: '#0B0D12' }}
+                onClick={() => setOpen(false)}
+              >
+                Contact
+              </a>
             </div>
           </div>
         )}

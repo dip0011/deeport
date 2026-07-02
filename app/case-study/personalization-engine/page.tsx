@@ -23,7 +23,7 @@ export default function PersonalizationEngineCaseStudy() {
             <section className="mt-12 md:mt-20 flex flex-col gap-6">
               <div className="flex items-center gap-2 text-[#8A8F98] text-xs font-medium uppercase tracking-wider">
                 <span className="text-sm mb-1">📁</span>
-                Case Study
+                Project
               </div>
               <h1 className="text-[38px] md:text-[56px] font-semibold leading-[1.15] tracking-tight text-[#0B0D12]">
                 One-to-One<br />
@@ -92,23 +92,23 @@ export default function PersonalizationEngineCaseStudy() {
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Defining behavior-based personalization logic with product stakeholders</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Designing a scalable, event-first data model</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Building high-throughput ingestion and processing pipelines</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Ensuring data consistency, reliability, and zero-downtime deployments</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Supporting rapid experimentation without compromising production stability</span>
                   </div>
                 </div>

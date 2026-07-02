@@ -6,6 +6,7 @@ import Navigation from '@/components/Navigation';
 import ContentContainer from '@/components/ContentContainer';
 import ScrollProgress from '@/components/ScrollProgress';
 import StickyBadge from '@/components/StickyBadge';
+import CredibilityBar from '@/components/CredibilityBar';
 
 export default function Home() {
   return (
@@ -117,11 +118,13 @@ export default function Home() {
                 I work as a product-focused founding engineer.
                 That means I don't just implement tickets, I help decide what should exist, what shouldn't, and how it needs to scale before it hurts.
               </p>
+
+              <CredibilityBar />
             </div>
           </ContentContainer>
         </section>
 
-        {/* Proof - Case Studies as Chapters */}
+        {/* Proof - Projects as Chapters */}
         <section className="py-20">
           <ContentContainer>
             <div className="max-w-[720px] space-y-16">
@@ -439,6 +442,37 @@ export default function Home() {
         <footer className="border-t" style={{ borderColor: 'rgba(0,0,0,0.06)', backgroundColor: '#F4F5F7' }}>
           <ContentContainer>
             <div className="py-16 md:py-20">
+              <p
+                className="text-lg md:text-2xl font-medium leading-relaxed max-w-[560px]"
+                style={{ color: '#0B0D12', lineHeight: '1.5' }}
+              >
+                If you are building an early-stage SaaS, an AI product, a
+                developer tool, or an internal platform, and you want one
+                person who can own both the product and the engineering,
+                let&rsquo;s talk.
+              </p>
+              <div className="flex flex-wrap items-center gap-4 mt-6 mb-12 md:mb-16">
+                <a
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Book+a+15-min+intro+with+Dip&details=Please+add+your+preferred+time.+Invitee:+dipdhameliya2001%40gmail.com&add=dipdhameliya2001%40gmail.com&location=Google+Meet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-140"
+                  style={{ backgroundColor: '#4F46E5', color: '#FFFFFF' }}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#4338CA')}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#4F46E5')}
+                >
+                  Book a 15-min intro
+                </a>
+                <a
+                  href="mailto:dipdhameliya2001@gmail.com"
+                  className="text-sm font-medium transition-colors duration-140"
+                  style={{ color: '#5F6368' }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = '#0B0D12')}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = '#5F6368')}
+                >
+                  or send a quick email
+                </a>
+              </div>
               <div className="flex flex-wrap gap-12 items-center justify-between">
                 <div className="text-left">
                   <div className="space-y-1">
@@ -451,7 +485,8 @@ export default function Home() {
                 </div>
                 <div className="text-left">
                   <div className="flex flex-col gap-2">
-                    {/* <Link href="/" className="nav-link" style={{ color: '#374151' }}>Work</Link> */}
+                    <Link href="/architecture" className="nav-link" style={{ color: '#374151' }}>Systems</Link>
+                    <Link href="/decisions" className="nav-link" style={{ color: '#374151' }}>Decisions</Link>
                     <Link href="/about" className="nav-link" style={{ color: '#374151' }}>About</Link>
                     <a href="mailto:dipdhameliya2001@gmail.com" className="nav-link" style={{ color: '#374151' }}>Contact</a>
                   </div>

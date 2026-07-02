@@ -1,6 +1,7 @@
 import GridBackground from '@/components/GridBackground';
 import Navigation from '@/components/Navigation';
 import ContentContainer from '@/components/ContentContainer';
+import LifecycleOwnership from '@/components/LifecycleOwnership';
 
 export default function About() {
   return (
@@ -174,6 +175,8 @@ export default function About() {
                 </div>
               </div>
             </div>
+
+            <LifecycleOwnership />
 
             <div className="flex flex-col items-center px-4 py-6 w-full">
               <span className="text-xs mb-2" style={{ color: '#8A8F98' }}>

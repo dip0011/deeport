@@ -23,7 +23,7 @@ export default function TechmonkCaseStudy() {
             <section className="mt-12 md:mt-20 flex flex-col gap-6">
               <div className="flex items-center gap-2 text-[#8A8F98] text-xs font-medium uppercase tracking-wider">
                 <span className="text-sm mb-1">📁</span>
-                Case Study
+                Project
               </div>
               <h1 className="text-[38px] md:text-[56px] font-semibold leading-[1.15] tracking-tight text-[#0B0D12]">
                 Full-Stack Customer<br />
@@ -92,23 +92,23 @@ export default function TechmonkCaseStudy() {
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Working directly with founders to translate business goals into system capabilities</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Defining how personalization should behave at the product level, not just the technical level</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Designing the system architecture to support real-time decision-making</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Building and shipping the core platform across backend, frontend, and infrastructure</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-[#8A8F98] mt-0.2">—</span>
+                    <span className="text-[#8A8F98] mt-0.2">•</span>
                     <span>Owning production readiness, observability, and scaling strategy</span>
                   </div>
                 </div>
