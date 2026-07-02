@@ -3,9 +3,9 @@ import ChapterHeading from './ChapterHeading';
 import Reveal from './Reveal';
 
 const mistakes = [
-  'I built features nobody asked for, and defended them longer than I should have.',
-  'I over-engineered systems for a scale that was still years away.',
-  'I trusted my own assumptions about users instead of going to check.',
+  'I built features nobody asked for, and defended them too long.',
+  'I over-engineered for scale that was years away.',
+  'I trusted my assumptions about users instead of checking.',
 ];
 
 export default function WhatIGotWrong() {
