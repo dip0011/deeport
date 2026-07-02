@@ -20,16 +20,10 @@ export default function Disagreements() {
         </p>
       </Reveal>
 
-      <ul className="flex flex-col gap-6 md:gap-7">
+      <ul className="flex flex-col gap-5">
         {takes.map((t, i) => (
-          <Reveal as="li" key={t} delay={i * 60}>
-            <div className="flex items-start gap-4">
-              <span
-                className="mt-[0.62rem] w-2 h-2 rotate-45 bg-accent shrink-0"
-                aria-hidden="true"
-              />
-              <h3 className="t-h3">{t}</h3>
-            </div>
+          <Reveal as="li" key={t} delay={i * 70}>
+            <p className="t-quote text-ink-2">{t}</p>
           </Reveal>
         ))}
       </ul>
